@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  /* Primary colors */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  /* Neutral colors */
+  --very-dark-blue-mainBG: hsl(217, 54%, 11%);
+  --very-dark-blue-cardBG: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+  height: 100vh;
+}
+
+
+/* General */
+body {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  color: var(--soft-blue);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--very-dark-blue-mainBG);
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+a:hover {
+  color: var(--cyan);
+}
+
+
+/* main starts */
+main {
+  margin-bottom: 4rem;
+}
+
+.card {
+  width: 350px;
+  background: var(--very-dark-blue-cardBG);
+  border-radius: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* Hero section */
+.hero {
+  position: relative;
+  margin: 2.9rem;
+}
+
+.hero .hero-image {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.hero .icon-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: hsla(178, 100%, 50%, .4);
+  border-radius: 1rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(100% 100%, 0 0, 0 0, 0 0);
+}
+
+.hero:hover .icon-bg {
+  clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0);
+}
+
+
+/* desc section */
+.desc {
+  padding: 0rem 2.9rem 2.5rem;
+}
+
+.desc h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  padding-bottom: 1.5rem;
+}
+
+.desc p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.desc .value-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--very-dark-blue-line);
+}
+
+.desc .value-time h2,
+.desc .value-time p {
+  display: flex;
+  align-items: center;
+}
+
+.desc .value-time .icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.desc .value-time h2 {
+  color: var(--cyan);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.desc .value-time p {
+  font-size: 1.7rem;
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0 .5rem;
+  gap: 1.7rem;
+}
+
+.creator .profile-pic {
+  width: 30px;
+  object-fit: cover;
+  display: block;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+}
+
+.creator p {
+  font-size: 1.9rem;
+}
+
+.creator-name {
+  font-weight: 400;
+}
+
+/* main ends */
+
+
+/* footer starts */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* footer ends */
+
+
+
+/* Responsive styles */
+
+/* screen size less than 1440px */
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* screen size less than 375px */
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    margin: 2.9rem 2.9rem 2.5rem;
+  }
+
+  .desc h1 {
+    font-size: 3.1rem;
+  }
+
+  .desc .value-time {
+    padding: 2rem 0 1.8rem;
+  }
+
+  .desc .value-time h2 {
+    font-size: 2.1rem;
+  }
+
+  .desc .value-time p {
+    font-size: 1.9rem;
+  }
+
+}
