@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Mikael-duru/nft-preview-card-component.git](https://github.com/Mikael-duru/nft-preview-card-component.git)
+- Live Site URL: [https://mikael-duru.github.io/nft-preview-card-component/](https://mikael-duru.github.io/nft-preview-card-component/)
 
 ## My process
 
@@ -41,6 +41,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [https://github.com/Mikael-duru/nft-preview-card-component.git](https://github.com/Mikael-duru/nft-preview-card-component.git)
+- Website - [Add your website here](https://your-website.com)
 - Frontend Mentor - [@Mikael-duru](https://www.frontendmentor.io/profile/mikael-duru)
 - Twitter - [@Mikaelduru](https://www.twitter.com/Mikaelduru)
