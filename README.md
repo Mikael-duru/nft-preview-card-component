@@ -43,4 +43,4 @@ Users should be able to:
 
 - Website - [Add your website here](https://your-website.com)
 - Frontend Mentor - [@Mikael-duru](https://www.frontendmentor.io/profile/mikael-duru)
-- Twitter - [@Mikaelduru](https://www.twitter.com/Mikaelduru)
+- Twitter - [@durumykael](https://www.twitter.com/durumykael)
